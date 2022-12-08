@@ -20,7 +20,8 @@
 					<div class="card fat">
 						<div class="card-body">
 							<h4 class="card-title">Login</h4>
-							<form method="POST" class="my-login-validation" novalidate="" action="">
+							<form method="POST" class="my-login-validation" novalidate=""
+							action="php/check-login.php">
 								<div class="form-group">
 									<label for="email">E-Mail Address</label>
 									<input id="email" type="email" class="form-control" name="email" value="" required autofocus>
@@ -43,7 +44,8 @@
 
 								<div class="form-group">
 									<div class="custom-checkbox custom-control">
-										<input type="checkbox" name="remember" id="remember" class="custom-control-input">
+										<input type="checkbox" name="remember" id="remember" class="custom-control-input"
+										 value="yes">
 										<label for="remember" class="custom-control-label">Remember Me</label>
 									</div>
 								</div>
@@ -60,7 +62,7 @@
 						</div>
 					</div>
 					<div class="footer">
-						Copyright &copy; 2022 &mdash; Chandimal Priyamantha
+						Copyright &copy; 2017 &mdash; Chandimal Priyamantha 
 					</div>
 				</div>
 			</div>
