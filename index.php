@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="utf-8">
 	<meta name="author" content="Chandimal">
@@ -20,8 +21,7 @@
 					<div class="card fat">
 						<div class="card-body">
 							<h4 class="card-title">Login</h4>
-							<form method="POST" class="my-login-validation" novalidate=""
-							action="php/check-login.php">
+							<form method="POST" class="my-login-validation" novalidate="" action="php/check-login.php">
 								<div class="form-group">
 									<label for="email">E-Mail Address</label>
 									<input id="email" type="email" class="form-control" name="email" value="" required autofocus>
@@ -37,18 +37,21 @@
 										</a>
 									</label>
 									<input id="password" type="password" class="form-control" name="password" required data-eye>
-								    <div class="invalid-feedback">
-								    	Password is required
-							    	</div>
-								</div>
-
-								<div class="form-group">
-									<div class="custom-checkbox custom-control">
-										<input type="checkbox" name="remember" id="remember" class="custom-control-input"
-										 value="yes">
-										<label for="remember" class="custom-control-label">Remember Me</label>
+									<div class="invalid-feedback">
+										Password is required
 									</div>
 								</div>
+
+								
+									<div class="form-group">
+										<label for="inputState">Select User Type</label>
+										<select id="inputState" class="form-control" name="role">
+											<option selected value="admin">Admin</option>
+											<option value="user">User</option>
+											
+										</select>
+									</div>
+									
 
 								<div class="form-group m-0">
 									<button type="submit" class="btn btn-primary btn-block">
@@ -62,7 +65,7 @@
 						</div>
 					</div>
 					<div class="footer">
-						Copyright &copy; 2017 &mdash; Chandimal Priyamantha 
+						Copyright &copy; 2017 &mdash; Chandimal Priyamantha
 					</div>
 				</div>
 			</div>
@@ -74,4 +77,5 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 	<script src="js/my-login.js"></script>
 </body>
+
 </html>
