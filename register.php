@@ -22,34 +22,61 @@
 					<div class="card fat">
 						<div class="card-body">
 							<h4 class="card-title">Register</h4>
+							<!-- ======================== Display error message and success message  ================================== -->
+							<?php if (isset($_GET['error'])) { ?>
+
+								<div class="alert alert-danger">
+									<p><?php echo $_GET['error']; ?></p>
+								</div>
+							<?php } ?>
+
+							<?php if (isset($_GET['success'])) { ?>
+
+								<div class="alert alert-success">
+									<p><?php echo $_GET['success']; ?></p>
+								</div>
+
+
+							<?php } ?>
+							<!-- ======================== Display error message and success message  ================================== -->
 							<form method="POST" action="php/check-register.php">
 								<div class="form-row">
 									<div class="form-group col-md-6">
 										<label for="email">E-Mail Address</label>
-										<input id="email" type="email" class="form-control" name="email" value="" required autofocus>
-										<div class="invalid-feedback">
-											Email is invalid
-										</div>
+
+										<?php if (isset($_GET['email'])) { ?>
+											<input id="email" type="email" class="form-control" name="email" value="<?php echo $_GET['email']; ?>">
+										<?php } else { ?>
+
+											<input id="email" type="email" class="form-control" name="email">
+										<?php } ?>
+
 									</div>
 									<div class="form-group col-md-6">
 										<label for="inputPassword4">Password</label>
 										<input id="password" type="password" class="form-control" name="password" required data-eye>
-										<div class="invalid-feedback">
-											Password is required
-										</div>
+
 									</div>
 								</div>
 								<div class="form-group">
-									<label for="inputAddress">Address</label>
-									<input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" 
-									name="address" required>
+									<?php if (isset($_GET['email'])) { ?>
+										<label for="inputAddress">Address</label>
+										<input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" name="address" value="<?php echo $_GET['address']; ?>">
+
+									<?php } else { ?>
+										<input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" name="address">
+									<?php } ?>
+
 								</div>
 
 								<div class="form-row">
 									<div class="form-group col-md-6">
 										<label for="inputCity">Name</label>
-										<input type="text" class="form-control" id="inputCity"
-										name="name" required>
+										<?php if (isset($_GET['email'])) { ?>
+										<input type="text" class="form-control" id="inputCity" name="name" value="<?php echo $_GET['name']; ?>">
+                                        <?php } else { ?>
+											<input type="text" class="form-control" id="inputCity" name="name">
+											<?php } ?>
 									</div>
 									<div class="form-group col-md-6">
 										<label for="inputState">Select User Type</label>
