@@ -42,16 +42,18 @@ if(isset($_POST['email']) && isset($_POST['password'])
                   $_SESSION['address'] = $row['Address'];
                   $_SESSION['name'] = $row['Name'];
                   $_SESSION['id'] = $row['ID'];
+                 
                   header("Location: ../user.php");
                   exit();
 
 
                 }else{
 
-                  $_SESSION['user_name'] = $row['Email'];
+                 
                   $_SESSION['address'] = $row['Address'];
                   $_SESSION['name'] = $row['Name'];
                   $_SESSION['id'] = $row['ID'];
+                  $_SESSION['user_type']=$row['User_Type'];
                   header("Location: ../admin.php");
                   exit();
 

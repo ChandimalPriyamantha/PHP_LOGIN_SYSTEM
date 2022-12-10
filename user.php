@@ -1,14 +1,9 @@
-<?php
+<?php 
 session_start();
 
-//echo 'Welcome'.$_SESSION['name'];
+if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
 
-//echo '<br>'.$_SESSION['user_name'];
-//echo $_SESSION['address'];
-//echo '<br>'.$_SESSION['name'];
-//echo '<br>'.$_SESSION['id'] ;
-
-?>
+ ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -96,3 +91,10 @@ session_start();
 </body>
 
 </html>
+
+<?php 
+}else{
+     header("Location: index.php");
+     exit();
+}
+ ?>
