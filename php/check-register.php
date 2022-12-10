@@ -58,7 +58,7 @@ if (
            	 header("Location: ../register.php?success=Your account has been created successfully");
 	         exit();
            }else{
-	           	header("Location: ../register.php?error=unknown error occurred");
+	           	header("Location: ../register.php?error=unknown error occurred&$user_data");
 		        exit();
            }
 		}

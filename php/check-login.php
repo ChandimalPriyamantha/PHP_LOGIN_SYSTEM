@@ -1,11 +1,13 @@
 <?php 
+session_start();
+include 'connection.php';
 
 if(isset($_POST['email']) && isset($_POST['password'])
  && isset($_POST['role'])){
 
-   include 'connection.php';
+   
 
-    /*echo 'Hello World..';
+   
     function test_input($data){
       $data = trim($data);
       $data = stripslashes($data);
@@ -15,19 +17,58 @@ if(isset($_POST['email']) && isset($_POST['password'])
     
     $username = test_input($_POST['email']);
     $password = test_input($_POST['password']);
-    $remember = test_input($_POST['remember']);
+    $role = test_input($_POST['role']);
 
     if (empty($username)){
-      header("Location: ../index.php?error=User Name is Required");
+      header("Location: ../index.php?error=Email is Required");
+      exit();
     }else if(empty($password)){
       header("Location: ../index.php?error=Password is Required");
+      exit();
     }else{
-      echo "Cool";
-    }*/
+      // hashing the password
+      $pass = md5($password);
+
+      $sql = "SELECT * FROM user_details WHERE Email='$username' AND Password='$pass' AND User_Type='$role'";
+
+      $result = mysqli_query($conn, $sql);
+
+      if (mysqli_num_rows($result) === 1) {
+        $row = mysqli_fetch_assoc($result);
+              if ($row['Email'] === $username && $row['Password'] === $pass && $row['User_Type'] === $role) {
+                if($row['User_Type']==='user'){
+
+                  $_SESSION['user_name'] = $row['Email'];
+                  $_SESSION['address'] = $row['Address'];
+                  $_SESSION['name'] = $row['Name'];
+                  $_SESSION['id'] = $row['ID'];
+                  header("Location: ../user.php");
+                  exit();
+
+
+                }else{
+
+                  $_SESSION['user_name'] = $row['Email'];
+                  $_SESSION['address'] = $row['Address'];
+                  $_SESSION['name'] = $row['Name'];
+                  $_SESSION['id'] = $row['ID'];
+                  header("Location: ../admin.php");
+                  exit();
+
+
+                }
+                
+              }else{
+          header("Location: ../index.php?error=Incorect User name or password or User Type");
+              exit();
+        }
+      }else{
+        header("Location: ../index.php?error=Incorect User name or password or User Type");
+            exit();
+      }
+    }
 
  }else{
 
     header("Location: ../index.php");
  }
-
-?>

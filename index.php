@@ -21,13 +21,28 @@
 					<div class="card fat">
 						<div class="card-body">
 							<h4 class="card-title">Login</h4>
+							<!-- ======================== Display error message and success message  ================================== -->
+							<?php if (isset($_GET['error'])) { ?>
+
+								<div class="alert alert-danger">
+									<p><?php echo $_GET['error']; ?></p>
+								</div>
+							<?php } ?>
+
+							<?php if (isset($_GET['success'])) { ?>
+
+								<div class="alert alert-success">
+									<p><?php echo $_GET['success']; ?></p>
+								</div>
+
+
+							<?php } ?>
+							<!-- ======================== Display error message and success message  ================================== -->
 							<form method="POST" class="my-login-validation" novalidate="" action="php/check-login.php">
 								<div class="form-group">
 									<label for="email">E-Mail Address</label>
-									<input id="email" type="email" class="form-control" name="email" value="" required autofocus>
-									<div class="invalid-feedback">
-										Email is invalid
-									</div>
+									<input id="email" type="email" class="form-control" name="email" value="">
+									
 								</div>
 
 								<div class="form-group">
@@ -36,22 +51,20 @@
 											Forgot Password?
 										</a>
 									</label>
-									<input id="password" type="password" class="form-control" name="password" required data-eye>
-									<div class="invalid-feedback">
-										Password is required
-									</div>
+									<input id="password" type="password" class="form-control" name="password"  data-eye>
+									
 								</div>
 
-								
-									<div class="form-group">
-										<label for="inputState">Select User Type</label>
-										<select id="inputState" class="form-control" name="role">
-											<option selected value="admin">Admin</option>
-											<option value="user">User</option>
-											
-										</select>
-									</div>
-									
+
+								<div class="form-group">
+									<label for="inputState">Select User Type</label>
+									<select id="inputState" class="form-control" name="role">
+										<option selected value="admin">Admin</option>
+										<option value="user">User</option>
+
+									</select>
+								</div>
+
 
 								<div class="form-group m-0">
 									<button type="submit" class="btn btn-primary btn-block">
