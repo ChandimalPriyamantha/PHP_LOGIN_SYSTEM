@@ -40,7 +40,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
     </nav>
     <h1>Welcome, <?php echo $_SESSION['name'] ?> as a user.</h1><br>
 
-
+    
     <!-- ------------------footer------------------------------------------  -->
     <footer class="bg-light text-center text-lg-start">
         <!-- Grid container -->

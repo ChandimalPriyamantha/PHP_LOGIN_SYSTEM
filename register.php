@@ -97,7 +97,7 @@
 									</div>
 								</div>
 
-								<button type="submit" class="btn btn-primary">Sign in</button>
+								<button type="submit" class="btn btn-primary">Create Account</button>
 
 								<div class="mt-4 text-center">
 									Already have an account? <a href="index.php">Login</a>

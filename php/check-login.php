@@ -54,7 +54,7 @@ if(isset($_POST['email']) && isset($_POST['password'])
                   $_SESSION['name'] = $row['Name'];
                   $_SESSION['id'] = $row['ID'];
                   $_SESSION['user_type']=$row['User_Type'];
-                  header("Location: ../admin.php");
+                  header("Location: ../admin/admin.php");
                   exit();
 
 
