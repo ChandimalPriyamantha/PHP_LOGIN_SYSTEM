@@ -31,6 +31,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_type'])) {
         <link rel="stylesheet" href="assets/css/style.min.css">
         <link rel="stylesheet" href="assets/css/components.min.css">
         <link rel="stylesheet" href="table-style.css">
+        
 
 
     </head>
@@ -260,157 +261,41 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_type'])) {
                             <li class="menu-header">Dashboard</li>
                             <li class="dropdown active">
                                 <a href="#" class="nav-link has-dropdown"><i class="fas fa-fire"></i><span>Dashboard</span></a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="nav-link" href="index-0.html">Analytics</a></li>
-                                    <li class="active"><a class="nav-link" href="index-2.html">Ecommerce</a></li>
-                                </ul>
-                            </li>
-                            <li class="menu-header">Starter</li>
-                            <li class="dropdown">
-                                <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fas fa-columns"></i> <span>Layout</span></a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="nav-link" href="layout-default.html">Default Layout</a></li>
 
-                                    <li><a class="nav-link" href="layout-top-navigation.html">Top Navigation</a></li>
-                                </ul>
                             </li>
-                            <li><a class="nav-link" href="blank.html"><i class="far fa-square"></i> <span>Blank Page</span></a></li>
+                            <li class="menu-header">Create Tasks</li>
                             <li class="dropdown">
-                                <a href="#" class="nav-link has-dropdown"><i class="fas fa-th"></i> <span>Bootstrap</span></a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="nav-link" href="bootstrap-alert.html">Alert</a></li>
-                                    <li><a class="nav-link" href="bootstrap-badge.html">Badge</a></li>
-                                    <li><a class="nav-link" href="bootstrap-breadcrumb.html">Breadcrumb</a></li>
-                                    <li><a class="nav-link" href="bootstrap-buttons.html">Buttons</a></li>
-                                    <li><a class="nav-link" href="bootstrap-card.html">Card</a></li>
-                                    <li><a class="nav-link" href="bootstrap-carousel.html">Carousel</a></li>
-                                    <li><a class="nav-link" href="bootstrap-collapse.html">Collapse</a></li>
-                                    <li><a class="nav-link" href="bootstrap-dropdown.html">Dropdown</a></li>
-                                    <li><a class="nav-link" href="bootstrap-form.html">Form</a></li>
-                                    <li><a class="nav-link" href="bootstrap-list-group.html">List Group</a></li>
-                                    <li><a class="nav-link" href="bootstrap-media-object.html">Media Object</a></li>
-                                    <li><a class="nav-link" href="bootstrap-modal.html">Modal</a></li>
-                                    <li><a class="nav-link" href="bootstrap-nav.html">Nav</a></li>
-                                    <li><a class="nav-link" href="bootstrap-navbar.html">Navbar</a></li>
-                                    <li><a class="nav-link" href="bootstrap-pagination.html">Pagination</a></li>
-                                    <li><a class="nav-link" href="bootstrap-popover.html">Popover</a></li>
-                                    <li><a class="nav-link" href="bootstrap-progress.html">Progress</a></li>
-                                    <li><a class="nav-link" href="bootstrap-table.html">Table</a></li>
-                                    <li><a class="nav-link" href="bootstrap-tooltip.html">Tooltip</a></li>
-                                    <li><a class="nav-link" href="bootstrap-typography.html">Typography</a></li>
-                                </ul>
-                            </li>
-                            <li class="menu-header">CodiePie</li>
-                            <li class="dropdown">
-                                <a href="#" class="nav-link has-dropdown"><i class="fas fa-th-large"></i> <span>Components</span></a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="nav-link" href="components-article.html">Article</a></li>
-                                    <li><a class="nav-link beep beep-sidebar" href="components-avatar.html">Avatar</a></li>
-                                    <li><a class="nav-link" href="components-chat-box.html">Chat Box</a></li>
-                                    <li><a class="nav-link beep beep-sidebar" href="components-empty-state.html">Empty State</a></li>
-                                    <li><a class="nav-link" href="components-gallery.html">Gallery</a></li>
-                                    <li><a class="nav-link beep beep-sidebar" href="components-hero.html">Hero</a></li>
-                                    <li><a class="nav-link" href="components-multiple-upload.html">Multiple Upload</a></li>
-                                    <li><a class="nav-link beep beep-sidebar" href="components-pricing.html">Pricing</a></li>
-                                    <li><a class="nav-link" href="components-statistic.html">Statistic</a></li>
-                                    <li><a class="nav-link" href="components-tab.html">Tab</a></li>
-                                    <li><a class="nav-link" href="components-table.html">Table</a></li>
-                                    <li><a class="nav-link" href="components-user.html">User</a></li>
-                                    <li><a class="nav-link beep beep-sidebar" href="components-wizard.html">Wizard</a></li>
-                                </ul>
-                            </li>
-                            <li class="dropdown">
-                                <a href="#" class="nav-link has-dropdown"><i class="far fa-file-alt"></i> <span>Forms</span></a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="nav-link" href="forms-advanced-form.html">Advanced Form</a></li>
-                                    <li><a class="nav-link" href="forms-editor.html">Editor</a></li>
-                                    <li><a class="nav-link" href="forms-validation.html">Validation</a></li>
-                                </ul>
-                            </li>
-                            <li class="dropdown">
-                                <a href="#" class="nav-link has-dropdown"><i class="fas fa-map-marker-alt"></i> <span>Google Maps</span></a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="gmaps-advanced-route.html">Advanced Route</a></li>
-                                    <li><a href="gmaps-draggable-marker.html">Draggable Marker</a></li>
-                                    <li><a href="gmaps-geocoding.html">Geocoding</a></li>
-                                    <li><a href="gmaps-geolocation.html">Geolocation</a></li>
-                                    <li><a href="gmaps-marker.html">Marker</a></li>
-                                    <li><a href="gmaps-multiple-marker.html">Multiple Marker</a></li>
-                                    <li><a href="gmaps-route.html">Route</a></li>
-                                    <li><a href="gmaps-simple.html">Simple</a></li>
-                                </ul>
-                            </li>
-                            <li class="dropdown">
-                                <a href="#" class="nav-link has-dropdown"><i class="fas fa-plug"></i> <span>Modules</span></a>
-                                <ul class="dropdown-menu">
-                                    <li class="menu-sub-header">Apps</li>
-                                    <li><a class="nav-link" href="modules-calendar.html">Calendar</a></li>
+                                <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fas fa-columns"></i> <span>Wrriting</span></a>
 
-                                    <li class="menu-sub-header">Charts</li>
-                                    <li><a class="nav-link" href="modules-chartjs.html">ChartJS</a></li>
-                                    <li><a class="nav-link" href="modules-apex-charts.html">Apex Charts</a></li>
-                                    <li><a class="nav-link" href="modules-e-charts.html">E Charts</a></li>
-                                    <li><a class="nav-link" href="modules-c3-charts.html">C3 Charts</a></li>
-                                    <li><a class="nav-link" href="modules-knob-charts.html">Knob Charts</a></li>
-                                    <li><a class="nav-link" href="modules-sparkline.html">Sparkline</a></li>
-                                    <li class="menu-sub-header">Tables</li>
-                                    <li><a class="nav-link" href="modules-datatables.html">DataTables</a></li>
-                                    <li><a class="nav-link" href="modules-table-more.html">More</a></li>
-                                    <li class="menu-sub-header">Font Icons</li>
-                                    <li><a class="nav-link" href="modules-font-awesome.html">Font Awesome</a></li>
-                                    <li><a class="nav-link" href="modules-line-icons.html">Line Icons</a></li>
-                                    <li><a class="nav-link" href="modules-feather-icons.html">Feather Icons</a></li>
-                                    <li><a class="nav-link" href="modules-ion-icons.html">Ion Icons</a></li>
-                                    <li><a class="nav-link" href="modules-flag.html">Flag</a></li>
-                                    <li><a class="nav-link" href="modules-weather-icon.html">Weather Icon</a></li>
-                                    <li class="menu-sub-header">Other</li>
-                                    <li><a class="nav-link" href="modules-owl-carousel.html">Owl Carousel</a></li>
-                                    <li><a class="nav-link" href="modules-sweet-alert.html">Sweet Alert</a></li>
-                                    <li><a class="nav-link" href="modules-toastr.html">Toastr</a></li>
-                                    <li><a class="nav-link" href="modules-vector-map.html">Vector Map</a></li>
-                                </ul>
                             </li>
-                            <li class="menu-header">Pages</li>
+                            <li><a class="nav-link" href="blank.html"><i class="far fa-square"></i> <span>Listening</span></a></li>
                             <li class="dropdown">
-                                <a href="#" class="nav-link has-dropdown"><i class="far fa-user"></i> <span>Auth</span></a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="auth-forgot-password.html">Forgot Password</a></li>
-                                    <li><a href="auth-login.html">Login</a></li>
-                                    <li><a href="auth-register.html">Register</a></li>
-                                    <li><a href="auth-reset-password.html">Reset Password</a></li>
-                                </ul>
+                                <a href="#" class="nav-link has-dropdown"><i class="fas fa-th"></i> <span>Reading</span></a>
+
                             </li>
                             <li class="dropdown">
-                                <a href="#" class="nav-link has-dropdown"><i class="fas fa-exclamation"></i> <span>Errors</span></a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="nav-link" href="errors-503.html">503</a></li>
-                                    <li><a class="nav-link" href="errors-403.html">403</a></li>
-                                    <li><a class="nav-link" href="errors-404.html">404</a></li>
-                                    <li><a class="nav-link" href="errors-500.html">500</a></li>
-                                </ul>
+                                <a href="#" class="nav-link has-dropdown"><i class="fas fa-th"></i> <span>Spoken</span></a>
+
                             </li>
-                            <li class="dropdown">
-                                <a href="#" class="nav-link has-dropdown"><i class="fas fa-bicycle"></i> <span>Features</span></a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="nav-link" href="features-activities.html">Activities</a></li>
-                                    <li><a class="nav-link" href="features-post-create.html">Post Create</a></li>
-                                    <li><a class="nav-link" href="features-posts.html">Posts</a></li>
-                                    <li><a class="nav-link" href="features-profile.html">Profile</a></li>
-                                    <li><a class="nav-link" href="features-settings.html">Settings</a></li>
-                                    <li><a class="nav-link" href="features-setting-detail.html">Setting Detail</a></li>
-                                    <li><a class="nav-link" href="features-tickets.html">Tickets</a></li>
-                                </ul>
-                            </li>
-                            <li class="dropdown">
-                                <a href="#" class="nav-link has-dropdown"><i class="fas fa-ellipsis-h"></i> <span>Utilities</span></a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="utilities-contact.html">Contact</a></li>
-                                    <li><a class="nav-link" href="utilities-invoice.html">Invoice</a></li>
-                                    <li><a href="utilities-subscribe.html">Subscribe</a></li>
-                                </ul>
-                            </li>
-                            <li><a class="nav-link" href="credits.html"><i class="fas fa-pencil-ruler"></i> <span>Credits</span></a></li>
                         </ul>
+                        <ul class="sidebar-menu">
+
+                            <li class="menu-header">Setting</li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fas fa-columns"></i> <span>#</span></a>
+
+                            </li>
+                            <li><a class="nav-link" href="blank.html"><i class="far fa-square"></i> <span>#</span></a></li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link has-dropdown"><i class="fas fa-th"></i> <span>#</span></a>
+
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link has-dropdown"><i class="fas fa-th"></i> <span>#</span></a>
+
+                            </li>
+                        </ul>
+
                         <div class="mt-4 mb-4 p-3 hide-sidebar-mini">
                             <a href="https://getcodiepie.com/docs" class="btn btn-primary btn-lg btn-block btn-icon-split"><i class="fas fa-rocket"></i> Documentation</a>
                         </div>
@@ -559,7 +444,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_type'])) {
                             <div class="col-lg-8">
                                 <div class="card">
                                     <div class="card-header">
-                                        <h4>Student Details</h4>
+                                        <h4>Students' Details</h4>
                                     </div>
                                     <div class="card-body">
                                         <!--<canvas id="myChart" height="158"></canvas> -->
@@ -577,37 +462,37 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_type'])) {
                                                 </thead>
                                                 <tbody>
                                                     <?php
-                                                     include '../php/connection.php';
-                                                     $sql = "SELECT * FROM user_details where User_Type='user'";
-                                                     $result = mysqli_query($conn, $sql);
-                                                   
-                                                     if (mysqli_num_rows($result) > 0) {
+                                                    include '../php/connection.php';
+                                                    $sql = "SELECT * FROM user_details where User_Type='user'";
+                                                    $result = mysqli_query($conn, $sql);
+
+                                                    if (mysqli_num_rows($result) > 0) {
                                                         // output data of each row
-                                                        while($row = mysqli_fetch_assoc($result)) {
-                                                            
+                                                        while ($row = mysqli_fetch_assoc($result)) {
+
                                                             $id = $row["ID"];
                                                             $name = $row["Name"];
                                                             $email = $row["Email"];
                                                             $address = $row["Address"];
-                                                            
 
-                                                            ?>
+
+                                                    ?>
                                                             <tr>
-                                                            <td><?php echo $id?> </td>
-                                                            <td><?php echo $name ?></td>
-                                                            <td><?php echo $email?></td>
-                                                            <td><?php echo $address?></td>
-                                                            
+                                                                <td><?php echo $id ?> </td>
+                                                                <td><?php echo $name ?></td>
+                                                                <td><?php echo $email ?></td>
+                                                                <td><?php echo $address ?></td>
+
                                                         <?php }
-                                                      } else {
+                                                    } else {
                                                         echo "<tr>";
                                                         echo "0 results";
                                                         echo "</tr>";
-                                                      }
-                                                      mysqli_close($conn);
+                                                    }
+                                                    mysqli_close($conn);
 
-                                                    ?>
-                                                    
+                                                        ?>
+
                                                 </tbody>
                                             </table>
 
@@ -743,269 +628,160 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_type'])) {
                             </div>
                         </div>
                         <div class="row row-deck">
-                            <div class="col-md-6">
+                            <div class="col-lg-8">
                                 <div class="card">
                                     <div class="card-header">
-                                        <h4>Best Products</h4>
+                                        <h4>Admins' Details</h4>
                                     </div>
                                     <div class="card-body">
-                                        <div class="owl-carousel owl-theme" id="products-carousel">
-                                            <div>
-                                                <div class="product-item pb-3">
-                                                    <div class="product-image">
-                                                        <img alt="image" src="assets/img/products/product-4-50.png" class="img-fluid">
-                                                    </div>
-                                                    <div class="product-details">
-                                                        <div class="product-name">iBook Pro 2018</div>
-                                                        <div class="product-review">
-                                                            <i class="fas fa-star"></i>
-                                                            <i class="fas fa-star"></i>
-                                                            <i class="fas fa-star"></i>
-                                                            <i class="fas fa-star"></i>
-                                                            <i class="fas fa-star"></i>
-                                                        </div>
-                                                        <div class="text-muted text-small">67 Sales</div>
-                                                        <div class="product-cta">
-                                                            <a href="#" class="btn btn-primary">Detail</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div>
-                                                <div class="product-item">
-                                                    <div class="product-image">
-                                                        <img alt="image" src="assets/img/products/product-3-50.png" class="img-fluid">
-                                                    </div>
-                                                    <div class="product-details">
-                                                        <div class="product-name">oPhone S9 Limited</div>
-                                                        <div class="product-review">
-                                                            <i class="fas fa-star"></i>
-                                                            <i class="fas fa-star"></i>
-                                                            <i class="fas fa-star"></i>
-                                                            <i class="fas fa-star"></i>
-                                                            <i class="fas fa-star-half"></i>
-                                                        </div>
-                                                        <div class="text-muted text-small">86 Sales</div>
-                                                        <div class="product-cta">
-                                                            <a href="#" class="btn btn-primary">Detail</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div>
-                                                <div class="product-item">
-                                                    <div class="product-image">
-                                                        <img alt="image" src="assets/img/products/product-1-50.png" class="img-fluid">
-                                                    </div>
-                                                    <div class="product-details">
-                                                        <div class="product-name">Headphone Blitz</div>
-                                                        <div class="product-review">
-                                                            <i class="fas fa-star"></i>
-                                                            <i class="fas fa-star"></i>
-                                                            <i class="fas fa-star"></i>
-                                                            <i class="fas fa-star"></i>
-                                                            <i class="far fa-star"></i>
-                                                        </div>
-                                                        <div class="text-muted text-small">63 Sales</div>
-                                                        <div class="product-cta">
-                                                            <a href="#" class="btn btn-primary">Detail</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="card">
-                                    <div class="card-header">
-                                        <h4>Top Countries</h4>
-                                    </div>
-                                    <div class="card-body">
-                                        <div class="row">
-                                            <div class="col-sm-6">
-                                                <div class="text-title mb-2">July</div>
-                                                <ul class="list-unstyled list-unstyled-border list-unstyled-noborder mb-0">
-                                                    <li class="media">
-                                                        <img class="img-fluid mt-1 img-shadow" src="http://puffintheme.com/craft/codiepie/dist/assets/modules/flag-icon-css/flags/4x3/id.svg" alt="image" width="40">
-                                                        <div class="media-body ml-3">
-                                                            <div class="media-title">USA</div>
-                                                            <div class="text-small text-muted">3,282 <i class="fas fa-caret-down text-danger"></i></div>
-                                                        </div>
-                                                    </li>
-                                                    <li class="media">
-                                                        <img class="img-fluid mt-1 img-shadow" src="http://puffintheme.com/craft/codiepie/dist/assets/modules/flag-icon-css/flags/4x3/my.svg" alt="image" width="40">
-                                                        <div class="media-body ml-3">
-                                                            <div class="media-title">Malaysia</div>
-                                                            <div class="text-small text-muted">2,976 <i class="fas fa-caret-down text-danger"></i></div>
-                                                        </div>
-                                                    </li>
-                                                    <li class="media">
-                                                        <img class="img-fluid mt-1 img-shadow" src="http://puffintheme.com/craft/codiepie/dist/assets/modules/flag-icon-css/flags/4x3/us.svg" alt="image" width="40">
-                                                        <div class="media-body ml-3">
-                                                            <div class="media-title">United States</div>
-                                                            <div class="text-small text-muted">1,576 <i class="fas fa-caret-up text-success"></i></div>
-                                                        </div>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <div class="col-sm-6 mt-sm-0 mt-4">
-                                                <div class="text-title mb-2">August</div>
-                                                <ul class="list-unstyled list-unstyled-border list-unstyled-noborder mb-0">
-                                                    <li class="media">
-                                                        <img class="img-fluid mt-1 img-shadow" src="http://puffintheme.com/craft/codiepie/dist/assets/modules/flag-icon-css/flags/4x3/id.svg" alt="image" width="40">
-                                                        <div class="media-body ml-3">
-                                                            <div class="media-title">USA</div>
-                                                            <div class="text-small text-muted">3,486 <i class="fas fa-caret-up text-success"></i></div>
-                                                        </div>
-                                                    </li>
-                                                    <li class="media">
-                                                        <img class="img-fluid mt-1 img-shadow" src="http://puffintheme.com/craft/codiepie/dist/assets/modules/flag-icon-css/flags/4x3/ps.svg" alt="image" width="40">
-                                                        <div class="media-body ml-3">
-                                                            <div class="media-title">Palestine</div>
-                                                            <div class="text-small text-muted">3,182 <i class="fas fa-caret-up text-success"></i></div>
-                                                        </div>
-                                                    </li>
-                                                    <li class="media">
-                                                        <img class="img-fluid mt-1 img-shadow" src="http://puffintheme.com/craft/codiepie/dist/assets/modules/flag-icon-css/flags/4x3/de.svg" alt="image" width="40">
-                                                        <div class="media-body ml-3">
-                                                            <div class="media-title">Germany</div>
-                                                            <div class="text-small text-muted">2,317 <i class="fas fa-caret-down text-danger"></i></div>
-                                                        </div>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row row-deck">
-                            <div class="col-md-8">
-                                <div class="card">
-                                    <div class="card-header">
-                                        <h4>Invoices</h4>
-                                        <div class="card-header-action">
-                                            <a href="#" class="btn btn-danger">View More <i class="fas fa-chevron-right"></i></a>
-                                        </div>
-                                    </div>
-                                    <div class="card-body p-0">
-                                        <div class="table-responsive table-invoice">
-                                            <table class="table table-striped">
-                                                <tr>
-                                                    <th>Invoice ID</th>
-                                                    <th>Customer</th>
-                                                    <th>Status</th>
-                                                    <th>Due Date</th>
-                                                    <th>Action</th>
-                                                </tr>
-                                                <tr>
-                                                    <td><a href="#">INV-87239</a></td>
-                                                    <td class="font-weight-600">Kusnadi</td>
-                                                    <td>
-                                                        <div class="badge badge-warning">Unpaid</div>
-                                                    </td>
-                                                    <td>July 19, 2018</td>
-                                                    <td>
-                                                        <a href="#" class="btn btn-primary">Detail</a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td><a href="#">INV-48574</a></td>
-                                                    <td class="font-weight-600">Susie Willis</td>
-                                                    <td>
-                                                        <div class="badge badge-success">Paid</div>
-                                                    </td>
-                                                    <td>July 21, 2018</td>
-                                                    <td>
-                                                        <a href="#" class="btn btn-primary">Detail</a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td><a href="#">INV-76824</a></td>
-                                                    <td class="font-weight-600">Muhamad Nuruzzaki</td>
-                                                    <td>
-                                                        <div class="badge badge-warning">Unpaid</div>
-                                                    </td>
-                                                    <td>July 22, 2018</td>
-                                                    <td>
-                                                        <a href="#" class="btn btn-primary">Detail</a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td><a href="#">INV-84990</a></td>
-                                                    <td class="font-weight-600">Agung Ardiansyah</td>
-                                                    <td>
-                                                        <div class="badge badge-warning">Unpaid</div>
-                                                    </td>
-                                                    <td>July 22, 2018</td>
-                                                    <td>
-                                                        <a href="#" class="btn btn-primary">Detail</a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td><a href="#">INV-87320</a></td>
-                                                    <td class="font-weight-600">Ardian Rahardiansyah</td>
-                                                    <td>
-                                                        <div class="badge badge-success">Paid</div>
-                                                    </td>
-                                                    <td>July 28, 2018</td>
-                                                    <td>
-                                                        <a href="#" class="btn btn-primary">Detail</a>
-                                                    </td>
-                                                </tr>
+                                        <!--<canvas id="myChart" height="158"></canvas> -->
+                                        <div class="table-wrapper-scroll-y my-custom-scrollbar">
+
+                                            <table class="table table-bordered table-striped mb-0">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">ID</th>
+                                                        <th scope="col">Name</th>
+                                                        <th scope="col">Email</th>
+                                                        <th scope="col">Address</th>
+                                                        <th scope="col">Action</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <?php
+                                                    include '../php/connection.php';
+                                                    $sql = "SELECT * FROM user_details where User_Type='admin'";
+                                                    $result = mysqli_query($conn, $sql);
+
+                                                    if (mysqli_num_rows($result) > 0) {
+                                                        // output data of each row
+                                                        while ($row = mysqli_fetch_assoc($result)) {
+
+                                                            $id = $row["ID"];
+                                                            $name = $row["Name"];
+                                                            $email = $row["Email"];
+                                                            $address = $row["Address"];
+
+
+                                                    ?>
+                                                            <tr>
+                                                                <td><?php echo $id ?> </td>
+                                                                <td><?php echo $name ?></td>
+                                                                <td><?php echo $email ?></td>
+                                                                <td><?php echo $address ?></td>
+
+                                                        <?php }
+                                                    } else {
+                                                        echo "<tr>";
+                                                        echo "0 results";
+                                                        echo "</tr>";
+                                                    }
+                                                    mysqli_close($conn);
+
+                                                        ?>
+
+                                                </tbody>
                                             </table>
+
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="card card-hero">
-                                    <div class="card-header">
-                                        <div class="card-icon">
-                                            <i class="far fa-question-circle"></i>
+                                    <div class="container">
+
+                                        <div class="calendar-base">
+
+                                            <div class="year">2017</div>
+                                            <!-- year -->
+
+                                            <div class="triangle-left"></div>
+                                            <!--triangle -->
+                                            <div class="triangle-right"></div>
+                                            <!--  triangle -->
+
+                                            <div class="months">
+                                                <span class="month-hover">Jan</span>
+                                                <span class="month-hover">Feb</span>
+                                                <span class="month-hover">Mar</span>
+                                                <strong class="month-color">Apr</strong>
+                                                <span class="month-hover">May</span>
+                                                <span class="month-hover">Jun</span>
+                                                <span class="month-hover">July</span>
+                                                <span class="month-hover">Aug</span>
+                                                <span class="month-hover">Sep</span>
+                                                <span class="month-hover">Oct</span>
+                                                <span class="month-hover">Nov</span>
+                                                <span class="month-hover">Dec</span>
+                                            </div><!-- months -->
+                                            <hr class="month-line" />
+
+                                            <div class="days">SUN MON TUE WED THU FRI SAT</div>
+                                            <!-- days -->
+
+                                            <div class="num-dates">
+
+                                                <div class="first-week"><span class="grey">26 27 28 29 30 31</span> 01</div>
+                                                <!-- first week -->
+                                                <div class="second-week">02 03 04 05 06 07 08</div>
+                                                <!-- week -->
+                                                <div class="third-week"> 09 10 11 12 13 14 15</div>
+                                                <!-- week -->
+                                                <div class="fourth-week"> 16 17 18 19 20 21 22</div>
+                                                <!-- week -->
+                                                <div class="fifth-week"> 23 24 25 26 <strong class="white">27</strong> 28 29</div>
+                                                <!-- week -->
+                                                <div class="sixth-week"> 30 <span class="grey">01 02 03 04 05 06</span></div>
+                                                <!-- week -->
+                                            </div>
+                                            <!-- num-dates -->
+                                            <div class="event-indicator"></div>
+                                            <!-- event-indicator -->
+                                            <div class="active-day"></div>
+                                            <!-- active-day -->
+                                            <div class="event-indicator two"></div>
+                                            <!-- event-indicator -->
+
                                         </div>
-                                        <h4>14</h4>
-                                        <div class="card-description">Customers need help</div>
-                                    </div>
-                                    <div class="card-body p-0">
-                                        <div class="tickets-list">
-                                            <a href="#" class="ticket-item">
-                                                <div class="ticket-title">
-                                                    <h4>My order hasn't arrived yet</h4>
-                                                </div>
-                                                <div class="ticket-info">
-                                                    <div>Laila Tazkiah</div>
-                                                    <div class="bullet"></div>
-                                                    <div class="text-primary">1 min ago</div>
-                                                </div>
-                                            </a>
-                                            <a href="#" class="ticket-item">
-                                                <div class="ticket-title">
-                                                    <h4>Please cancel my order</h4>
-                                                </div>
-                                                <div class="ticket-info">
-                                                    <div>Debra Stewart</div>
-                                                    <div class="bullet"></div>
-                                                    <div>2 hours ago</div>
-                                                </div>
-                                            </a>
-                                            <a href="#" class="ticket-item">
-                                                <div class="ticket-title">
-                                                    <h4>Do you see my mother?</h4>
-                                                </div>
-                                                <div class="ticket-info">
-                                                    <div>Syahdan Ubaidillah</div>
-                                                    <div class="bullet"></div>
-                                                    <div>6 hours ago</div>
-                                                </div>
-                                            </a>
-                                            <a href="features-tickets.html" class="ticket-item ticket-more">
-                                                View All <i class="fas fa-chevron-right"></i>
-                                            </a>
+                                        <!-- calendar-base -->
+                                        <div class="calendar-left">
+
+                                            <div class="hamburger">
+                                                <div class="burger-line"></div>
+                                                <!-- burger-line -->
+                                                <div class="burger-line"></div>
+                                                <!-- burger-line -->
+                                                <div class="burger-line"></div>
+                                                <!-- burger-line -->
+                                            </div>
+                                            <!-- hamburger -->
+
+
+                                            <div class="num-date">27</div>
+                                            <!--num-date -->
+                                            <div class="day">THURSDAY</div>
+                                            <!--day -->
+                                            <div class="current-events">Current Events
+                                                <br />
+                                                <ul>
+                                                    <li>Day 09 Daily CSS Image</li>
+                                                </ul>
+                                                <span class="posts">See post events</span>
+                                            </div>
+                                            <!--current-events -->
+
+                                            <div class="create-event">Create an Event</div>
+                                            <!-- create-event -->
+                                            <hr class="event-line" />
+                                            <div class="add-event"><span class="add">+</span></div>
+                                            <!-- add-event -->
+
                                         </div>
+                                        <!-- calendar-left -->
+
                                     </div>
+                                    <!-- container -->
                                 </div>
                             </div>
                         </div>
